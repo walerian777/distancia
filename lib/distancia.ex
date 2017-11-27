@@ -1,6 +1,6 @@
-defmodule Distanco do
+defmodule Distancia do
   @moduledoc """
-  Documentation for Distanco.
+  Documentation for Distancia.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Distanco do
 
   ## Examples
 
-      iex> Distanco.hello
+      iex> Distancia.hello
       :world
 
   """

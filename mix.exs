@@ -1,13 +1,17 @@
-defmodule Distanco.Mixfile do
+defmodule Distancia.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :distanco,
+      app: :distancia,
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      description: description(),
+      package: package(),
+      deps: deps(),
+      name: "Distancia",
+      source_url: "https://github.com/walerian777/distancia"
     ]
   end
 
@@ -19,5 +23,17 @@ defmodule Distanco.Mixfile do
 
   defp deps do
     []
+  end
+
+  defp description do
+  end
+
+  defp package do
+    [
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      maintainers: ["Walerian Sobczak"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/walerian777/distancia"}
+    ]
   end
 end
