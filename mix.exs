@@ -16,16 +16,20 @@ defmodule Distancia.Mixfile do
   end
 
   def application do
-    [
-      extra_applications: [:logger]
-    ]
-  end
-
-  defp deps do
     []
   end
 
+  defp deps do
+    [
+      { :ex_doc, "~> 0.18", only: :dev, runtime: false }
+    ]
+  end
+
   defp description do
+    """
+    Distancia is a module which provides functions that calculate distances between two points.
+    It allows to perform calulations in various metrics.
+    """
   end
 
   defp package do
@@ -33,7 +37,7 @@ defmodule Distancia.Mixfile do
       files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
       maintainers: ["Walerian Sobczak"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/walerian777/distancia"}
+      links: %{ "GitHub" => "https://github.com/walerian777/distancia" }
     ]
   end
 end
