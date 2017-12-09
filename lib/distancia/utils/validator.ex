@@ -1,4 +1,6 @@
 defmodule Distancia.Utils.Validator do
+  @moduledoc false
+
   def validate!(p, q) do
     case validate(p, q) do
       { :ok, result } -> result

@@ -1,4 +1,6 @@
 defmodule Distancia.Chebyshev do
+  @moduledoc false
+
   alias Distancia.Utils.Parser
   alias Distancia.Utils.Validator
 

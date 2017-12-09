@@ -1,6 +1,6 @@
 defmodule Distancia do
   @moduledoc """
-  `Distancia` is a module which provides functions that calculate distances between two points.
+  Distancia is a module which provides functions that calculate distances between two points.
 
   It allows to perform calulations in various metrics:
   - Euclidean (`Distancia.euclidean/2`)

@@ -1,4 +1,6 @@
 defmodule Distancia.Utils.Parser do
+  @moduledoc false
+
   def map_to_lists(args) do
     Enum.map(args, &to_list/1)
   end

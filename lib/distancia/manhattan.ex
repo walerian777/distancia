@@ -1,4 +1,6 @@
 defmodule Distancia.Manhattan do
+  @moduledoc false
+
   alias Distancia.Utils.Parser
   alias Distancia.Utils.Validator
 
