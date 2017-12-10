@@ -9,6 +9,12 @@ defmodule Distancia do
   - Hamming (`Distancia.hamming/2`)
   """
 
+  @typedoc """
+  Point can be represented as a list, a tuple, a number or a string.
+  """
+
+  @type point :: list | tuple | number | String.t
+
   @doc """
   Calculates the Euclidean distance between points `p` and `q`.
 
@@ -24,6 +30,7 @@ defmodule Distancia do
       5.556158745032398
 
   """
+  @spec euclidean(point, point) :: number
   defdelegate euclidean(p, q), to: Distancia.Euclidean, as: :calculate
 
   @doc """
@@ -41,6 +48,7 @@ defmodule Distancia do
       7.77
 
   """
+  @spec manhattan(point, point) :: number
   defdelegate manhattan(p, q), to: Distancia.Manhattan, as: :calculate
 
   @doc """
@@ -58,6 +66,7 @@ defmodule Distancia do
       4.47
 
   """
+  @spec chebyshev(point, point) :: number
   defdelegate chebyshev(p, q), to: Distancia.Chebyshev, as: :calculate
 
   @doc """
@@ -75,5 +84,6 @@ defmodule Distancia do
       3
 
   """
+  @spec hamming(point, point) :: number
   defdelegate hamming(p, q), to: Distancia.Hamming, as: :calculate
 end
