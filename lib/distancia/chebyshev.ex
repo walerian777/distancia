@@ -6,7 +6,8 @@ defmodule Distancia.Chebyshev do
   alias Distancia.Utils.Validator
 
   def calculate(p, q) do
-    Validator.validate!(p, q)
+    [p, q]
+    |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
     |> Enum.map(fn({a, b}) -> abs(a - b) end)

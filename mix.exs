@@ -21,8 +21,8 @@ defmodule Distancia.Mixfile do
 
   defp deps do
     [
-      { :ex_doc, "~> 0.18", only: :dev, runtime: false },
-      { :credo, "~> 0.8", only: [:dev, :test], runtime: false }
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -38,7 +38,7 @@ defmodule Distancia.Mixfile do
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Walerian Sobczak"],
       licenses: ["MIT"],
-      links: %{ "GitHub" => "https://github.com/walerian777/distancia" }
+      links: %{"GitHub" => "https://github.com/walerian777/distancia"}
     ]
   end
 end

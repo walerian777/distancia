@@ -6,7 +6,8 @@ defmodule Distancia.Manhattan do
   alias Distancia.Utils.Validator
 
   def calculate(p, q) do
-    Validator.validate!(p, q)
+    [p, q]
+    |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
     |> Enum.reduce(0, fn({a, b}, acc) -> abs(a - b) + acc end)
