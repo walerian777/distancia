@@ -5,7 +5,7 @@ defmodule Distancia.Mixfile do
     [
       app: :distancia,
       version: "0.1.1",
-      elixir: "~> 1.5",
+      elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
       description: description(),
       package: package(),
