@@ -1,5 +1,6 @@
 defmodule Distancia.Euclidean do
   @moduledoc false
+  @behaviour Distancia.Metric
 
   alias Distancia.Utils.Parser
   alias Distancia.Utils.Validator
