@@ -21,7 +21,8 @@ defmodule Distancia.Mixfile do
 
   defp deps do
     [
-      { :ex_doc, "~> 0.18", only: :dev, runtime: false }
+      { :ex_doc, "~> 0.18", only: :dev, runtime: false },
+      { :credo, "~> 0.8", only: [:dev, :test], runtime: false }
     ]
   end
 
