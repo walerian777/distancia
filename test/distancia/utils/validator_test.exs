@@ -72,6 +72,7 @@ defmodule Distancia.Utils.ValidatorTest do
   test "validate! raises an ArgumentError for :error" do
     a = [1, 2]
     b = [3, 4, 5]
+
     assert_raise ArgumentError, fn ->
       Validator.validate!([a, b])
     end

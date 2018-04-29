@@ -10,7 +10,7 @@ defmodule Distancia.Euclidean do
     |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
-    |> Enum.reduce(0, fn({a, b}, acc) -> :math.pow(a - b, 2) + acc end)
+    |> Enum.reduce(0, fn {a, b}, acc -> :math.pow(a - b, 2) + acc end)
     |> :math.sqrt()
   end
 end

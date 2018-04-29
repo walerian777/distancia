@@ -10,7 +10,7 @@ defmodule Distancia.Chebyshev do
     |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
-    |> Enum.map(fn({a, b}) -> abs(a - b) end)
+    |> Enum.map(fn {a, b} -> abs(a - b) end)
     |> Enum.max()
   end
 end

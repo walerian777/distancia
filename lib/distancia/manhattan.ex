@@ -10,6 +10,6 @@ defmodule Distancia.Manhattan do
     |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
-    |> Enum.reduce(0, fn({a, b}, acc) -> abs(a - b) + acc end)
+    |> Enum.reduce(0, fn {a, b}, acc -> abs(a - b) + acc end)
   end
 end

@@ -6,7 +6,7 @@ defmodule Distancia.Mixfile do
       app: :distancia,
       version: "0.1.2",
       elixir: "~> 1.4",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
       deps: deps(),
@@ -21,8 +21,7 @@ defmodule Distancia.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
-      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false}
     ]
   end
 

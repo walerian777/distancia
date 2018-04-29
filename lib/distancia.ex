@@ -13,7 +13,7 @@ defmodule Distancia do
   Point can be represented as a list, a tuple, a number or a string.
   """
 
-  @type point :: list | tuple | number | String.t
+  @type point :: list | tuple | number | String.t()
 
   @doc """
   Calculates the Euclidean distance between points `p` and `q`.

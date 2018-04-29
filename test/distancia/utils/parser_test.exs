@@ -33,12 +33,14 @@ defmodule Distancia.Utils.ParserTest do
       "test",
       12_345
     ]
+
     lists = [
       [1, 2],
       [1, 2],
       'test',
       [12_345]
     ]
+
     assert Parser.map_to_lists(arguments) == lists
   end
 end
