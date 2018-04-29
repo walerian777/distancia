@@ -10,9 +10,9 @@ defmodule Distancia.Hamming do
     |> Validator.validate!()
     |> Parser.map_to_lists()
     |> Enum.zip()
-    |> Enum.reduce(0, fn({a, b}, acc) ->
+    |> Enum.reduce(0, fn {a, b}, acc ->
       case a === b do
-        true  -> acc
+        true -> acc
         false -> acc + 1
       end
     end)

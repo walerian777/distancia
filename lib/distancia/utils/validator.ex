@@ -14,8 +14,8 @@ defmodule Distancia.Utils.Validator do
     |> validate_length()
   end
 
-  def validate_type([p, q]) when is_list(p) and is_list(q),     do: {:ok, [p, q]}
-  def validate_type([p, q]) when is_tuple(p) and is_tuple(q),   do: {:ok, [p, q]}
+  def validate_type([p, q]) when is_list(p) and is_list(q), do: {:ok, [p, q]}
+  def validate_type([p, q]) when is_tuple(p) and is_tuple(q), do: {:ok, [p, q]}
   def validate_type([p, q]) when is_number(p) and is_number(q), do: {:ok, [p, q]}
   def validate_type([p, q]) when is_binary(p) and is_binary(q), do: {:ok, [p, q]}
 
