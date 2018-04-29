@@ -9,7 +9,7 @@ The package can be installed by adding `distancia` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:distancia, "~> 0.1.2"}
+    {:distancia, "~> 0.1.3"}
   ]
 end
 ```
